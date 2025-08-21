@@ -1,0 +1,24 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+.custom-element {
+  color: $gray-100;
+  background-color: $dark;
+}
+
+.container {
+
+}
+
+$primary: #0074d9;
+$danger: #ff4136;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

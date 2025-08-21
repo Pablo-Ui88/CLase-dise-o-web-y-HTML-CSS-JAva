@@ -6,46 +6,23 @@
   <title>Imagen interactiva</title>
   <style>
     body {
-        margin:0;
-        padding:0px;
-        background: #f0f0f0;
-    }
-    .contenedor {
-      bottom: 0;      
-      width:100%;
-      height: 30%;
-      margin:0px;
-      padding:0px;
-      position: relative;
-      display: inline-block;
-    }
-    .contenedor img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .boton {
-      text-align: center;
-      width: 70px;  
-      position: absolute;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 8px;
-      background: rgba(0, 87, 180, 0.8);
-      color: white;
-      cursor: pointer;
-      font-size: 14px;
-      transition: transform 0.2s, background 0.3s;
-    }
-    .boton:hover {
-      background: rgba(0, 123, 255, 1);
-      transform: scale(1.1);
-    }
-    /* Ubicaciones de los botones */
-    #btn1 { top: 0; left: 30%; }
-    #btn2 { top: 0; left: 37%; }
-    #btn3 { top: 0; left: 44%; }
+  background-image: url("1v.gif"); /* ruta de la imagen */
+  background-size: cover;  /* ajusta la imagen a toda la pantalla */
+  background-position: center; /* centra la imagen */
+  background-attachment: fixed; /* efecto parallax, la imagen no se mueve */
+  background-repeat: no-repeat; /* evita que se repita */
+}
+.btn-link {
+  color: #6a0dad;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 </head>
 <body>
   <div>
@@ -53,12 +30,10 @@
   </div>  
   <div class="contenedor">
 
-    <a href="index.html"><button id="btn1" class="boton">inicio</button></a>
-    <a href="ticket.html"><button id="btn2" class="boton">Ticket</button></a>
-    <a href="contacto.html"><button id="btn3" class="boton">Contacta</button></a>
-    
+<a href="index.html"><button type="button" class="btn btn-primary btn-lg">Inicio</button></a>
+<a href="ticket.html"><button type="button" class="btn btn-primary btn-lg">Ticket</button></a>
+<a href="contacto.html"><button type="button" class="btn btn-primary btn-lg">Contacta</button></a>
 
-    <img src="1v.gif" alt="Imagen interactiva">   
   </div>
 
 
