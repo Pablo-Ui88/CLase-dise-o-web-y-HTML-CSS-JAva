@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen interactiva</title>
+  <style>
+    body {
+        margin:0;
+        padding:0px;
+        background: #f0f0f0;
+    }
+    .contenedor {
+      bottom: 0;      
+      width:100%;
+      height: 30%;
+      margin:0px;
+      padding:0px;
+      position: relative;
+      display: inline-block;
+    }
+    .contenedor img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .boton {
+      text-align: center;
+      width: 70px;  
+      position: absolute;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(0, 87, 180, 0.8);
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .boton:hover {
+      background: rgba(0, 123, 255, 1);
+      transform: scale(1.1);
+    }
+    /* Ubicaciones de los botones */
+    #btn1 { top: 0; left: 30%; }
+    #btn2 { top: 0; left: 37%; }
+    #btn3 { top: 0; left: 44%; }
+  </style>
+</head>
+<body>
+  <div>
+
+  </div>  
+  <div class="contenedor">
+
+    <a href="index.html"><button id="btn1" class="boton">inicio</button></a>
+    <a href="ticket.html"><button id="btn2" class="boton">Ticket</button></a>
+    <a href="contacto.html"><button id="btn3" class="boton">Contacta</button></a>
+    
+
+    <img src="1v.gif" alt="Imagen interactiva">   
+  </div>
+
+
+  <script>
+    document.getElementById("btn1").addEventListener("click", () => alert("Redirigiendo a la pagina principal"));
+    document.getElementById("btn2").addEventListener("click", () => alert("Solicita un ticket"));
+    document.getElementById("btn3").addEventListener("click", () => alert("Contacta con nosotros"));
+  </script>
+</body>
+</html>
