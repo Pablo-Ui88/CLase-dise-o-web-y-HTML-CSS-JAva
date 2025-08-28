@@ -2,10 +2,10 @@
 La estructura de la página sigue un diseño modular y centrado en la usabilidad.
 
 
-🎨 ##Paleta de colores detectada
-🔹 Colores principales
+🎨 ## Paleta de colores detectada
+>🔹 Colores principales
 
-Azul cielo (fondo general)
+**Azul cielo (fondo general)
 skyblue → #87CEEB
 ✔ transmite frescura y da un aire amigable.
 
@@ -15,11 +15,11 @@ black → #000000
 
 Blanco humo / Gris muy claro (contenedores)
 #f5f5f5
-✔ para los bloques de contenido, aporta limpieza y orden.
+✔ para los bloques de contenido, aporta limpieza y orden.**
 
-🔹 Colores secundarios
+>🔹 Colores secundarios
 
-Gris rosado claro (fondos de botones y formulario)
+**Gris rosado claro (fondos de botones y formulario)
 rgb(223, 213, 213) → #DFD5D5
 ✔ da suavidad y combina con el morado.
 
@@ -30,9 +30,9 @@ rgb(175, 157, 173) → #AF9DAE
 Morado fuerte (links)
 #6A0DAD
 ✔ relacionado con creatividad y tecnología, le da identidad.
-
-🔹 Colores de interacción
-
+**
+>🔹 Colores de interacción
+**
 Azul intenso (hover botones principales)
 #0074D9
 ✔ aporta dinamismo y resalta llamadas a la acción.
@@ -40,8 +40,8 @@ Azul intenso (hover botones principales)
 Degradado footer
 linear-gradient(135deg, #DFD5D5, #AF9DAE)
 ✔ mantiene consistencia con el formulario y da un cierre elegante.
-
-📌 Paleta resumida (hex)
+**
+📌 >Paleta resumida (hex)
 
 #87CEEB → Fondo general (cielo azul)
 
@@ -56,8 +56,9 @@ linear-gradient(135deg, #DFD5D5, #AF9DAE)
 #6A0DAD → Morado creativo (links)
 
 #0074D9 → Azul acción (hover CTA)
-📐 Diseño y distribución
+📐 >Diseño y distribución
 
+~~~
 Header fijo con navegación: permite moverse entre secciones principales sin perder el contexto.
 
 Botón de ticket de atención: ubicado en la parte superior izquierda, actúa como CTA (Call To Action), ideal para soporte al cliente.
@@ -65,3 +66,6 @@ Botón de ticket de atención: ubicado en la parte superior izquierda, actúa co
 Secciones con tarjetas: cada bloque de contenido (Desarrollo web, Precios, Contacto) está enmarcado en un container con esquinas redondeadas, lo que da un estilo moderno y accesible.
 
 Formulario lateral: posicionado en la parte derecha, independiente del flujo de contenido, optimiza el acceso de usuarios registrados o en proceso de registro.
+~~~
+[>Herramienta utilizada para HTML y CSS](https://getbootstrap.com/docs/5.0/customize/sass)
+[>Herramienta utilizada para HTML y CSS](https://chatgpt.com/?model=auto)
