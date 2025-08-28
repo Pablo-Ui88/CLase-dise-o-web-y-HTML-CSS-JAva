@@ -70,6 +70,6 @@ Secciones con tarjetas: cada bloque de contenido (Desarrollo web, Precios, Conta
 
 Formulario lateral: posicionado en la parte derecha, independiente del flujo de contenido, optimiza el acceso de usuarios registrados o en proceso de registro.
 ~~~
-[>Herramienta utilizada para HTML y CSS](https://getbootstrap.com/docs/5.0/customize/sass)
-[Herramienta utilizada para HTML y CSS](https://chatgpt.com/?model=auto)
+>[Herramienta utilizada para HTML y CSS](https://getbootstrap.com/docs/5.0/customize/sass)
+>[Herramienta utilizada para HTML y CSS](https://chatgpt.com/?model=auto)
 ![Desarrollo web y Programación de software](./img.png)
