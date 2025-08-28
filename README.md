@@ -5,8 +5,7 @@ La estructura de la página sigue un diseño modular y centrado en la usabilidad
 🎨 ## Paleta de colores detectada
 >🔹 Colores principales
 
-**
-Azul cielo (fondo general)
+**Azul cielo (fondo general)
 skyblue → #87CEEB
 ✔ transmite frescura y da un aire amigable.
 
@@ -16,8 +15,7 @@ black → #000000
 
 Blanco humo / Gris muy claro (contenedores)
 #f5f5f5
-✔ para los bloques de contenido, aporta limpieza y orden.
-**
+✔ para los bloques de contenido, aporta limpieza y orden.**
 
 >🔹 Colores secundarios
 
