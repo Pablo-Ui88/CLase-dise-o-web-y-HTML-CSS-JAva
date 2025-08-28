@@ -1,8 +1,8 @@
-# CLase-dise-o-web-y-HTML-CSS-JAva
+#CLase-dise-o-web-y-HTML-CSS-JAva
 La estructura de la página sigue un diseño modular y centrado en la usabilidad.
 
-
-🎨 ## Paleta de colores detectada
+___
+🎨 ##Paleta de colores detectada
 >🔹 Colores principales
 
 **Azul cielo (fondo general)
