@@ -2,7 +2,7 @@
 La estructura de la página sigue un diseño modular y centrado en la usabilidad.
 
 
-🎨 Paleta de colores detectada
+🎨 #Paleta de colores detectada
 🔹 Colores principales
 
 Azul cielo (fondo general)
