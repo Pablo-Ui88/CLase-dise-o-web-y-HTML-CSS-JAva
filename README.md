@@ -5,7 +5,8 @@ La estructura de la página sigue un diseño modular y centrado en la usabilidad
 🎨 ## Paleta de colores detectada
 >🔹 Colores principales
 
-**Azul cielo (fondo general)
+**
+Azul cielo (fondo general)
 skyblue → #87CEEB
 ✔ transmite frescura y da un aire amigable.
 
@@ -15,11 +16,13 @@ black → #000000
 
 Blanco humo / Gris muy claro (contenedores)
 #f5f5f5
-✔ para los bloques de contenido, aporta limpieza y orden.**
+✔ para los bloques de contenido, aporta limpieza y orden.
+**
 
 >🔹 Colores secundarios
 
-**Gris rosado claro (fondos de botones y formulario)
+**
+Gris rosado claro (fondos de botones y formulario)
 rgb(223, 213, 213) → #DFD5D5
 ✔ da suavidad y combina con el morado.
 
@@ -42,6 +45,7 @@ linear-gradient(135deg, #DFD5D5, #AF9DAE)
 ✔ mantiene consistencia con el formulario y da un cierre elegante.
 **
 📌 >Paleta resumida (hex)
+**
 
 #87CEEB → Fondo general (cielo azul)
 
@@ -57,6 +61,7 @@ linear-gradient(135deg, #DFD5D5, #AF9DAE)
 
 #0074D9 → Azul acción (hover CTA)
 📐 >Diseño y distribución
+**
 
 ~~~
 Header fijo con navegación: permite moverse entre secciones principales sin perder el contexto.
@@ -69,3 +74,4 @@ Formulario lateral: posicionado en la parte derecha, independiente del flujo de 
 ~~~
 [>Herramienta utilizada para HTML y CSS](https://getbootstrap.com/docs/5.0/customize/sass)
 [>Herramienta utilizada para HTML y CSS](https://chatgpt.com/?model=auto)
+![>Desarrollo web y Programación de software](https://chatgpt.com/c/68b09d88-5fe4-8333-91e4-0b94187da86f)
