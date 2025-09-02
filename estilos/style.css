@@ -114,7 +114,7 @@ body {
 /* Footer */
 .footi {
   margin-top: 40px;
-  background: linear-gradient(135deg, rgb(223, 213, 213), rgb(175, 157, 173));
+  background: linear-gradient(135deg, #2c2a2a, #ffffff);
   color: black;
   text-align: center;
   padding: 20px;
