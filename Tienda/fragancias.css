@@ -46,6 +46,56 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+
+
+.producto{
+  width: 300px;
+  height:500px;
+  background-color:#0074d9;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+
+}
+.producto p{
+  padding:3px 5px;
+}
+.producto h3{
+  text-align: center;
+  color: white;
+}
+
+.producto img{
+  width: 100%;
+  height: 300px;
+}
+
+.producto .btn1 {
+  position: absolute;
+  left: 50%;                 /* centra horizontalmente */
+  bottom: 0px;              /* separa desde abajo */
+  transform: translateX(69%); /* ajusta el centro exacto */
+  
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.producto .btn1:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+
+.producto:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
 /* Footer */
 .footi {
   margin-top: 40px;

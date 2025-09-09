@@ -1,26 +1,41 @@
 <?php
-function limpiar($dato) {
-    return htmlspecialchars(trim($dato));
+session_start(); // 👈 Siempre al inicio
+
+$conexion = new mysqli("localhost", "root", "", "registro-login");
+
+if ($conexion->connect_error) {
+    die("Error de conexión: " . $conexion->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $user = $_POST['user'];
+    $pass = $_POST['password'];
+
+    // Buscar usuario
+    $sql = "SELECT * FROM usuarios WHERE usuario = ?";
+    $stmt = $conexion->prepare($sql);
+    $stmt->bind_param("s", $user);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
+
+    if ($resultado->num_rows > 0) {
+        $row = $resultado->fetch_assoc();
+
+        // Verificar la contraseña encriptada
+        if (password_verify($pass, $row['password'])) {
+            // ✅ Iniciar sesión
+            $_SESSION['usuario_id'] = $row['id'];
+            $_SESSION['usuario_nombre'] = $row['usuario'];
+
+            // Redirigir a página protegida
+            header("Location: ../index.php");
+            exit();
+        } else {
+            echo "❌ Contraseña incorrecta";
+        }
+    } else {
+        echo "❌ Usuario no encontrado";
+    }
 }
 ?>
 
-<?php
-session_start();
-
-// Datos de prueba (deberían venir de una base de datos)
-$usuario_valido = "admin";
-$pass_valido = "1234";
-
-// Recibir datos del formulario
-$user = $_POST['user'] ?? '';
-$pass = $_POST['pass'] ?? '';
-
-if ($user === $usuario_valido && $pass === $pass_valido) {
-    $_SESSION['usuario'] = $user;
-    header("Location: ../dashboard.php"); // página protegida
-    exit();
-} else {
-    echo "<p style='color:red;'>Usuario o contraseña incorrectos</p>";
-    echo "<a href='../index.html'>Volver</a>";
-}
-?>

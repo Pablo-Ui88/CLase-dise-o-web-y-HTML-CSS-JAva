@@ -13,7 +13,23 @@ body {
   color: black;
 }
 
+nav {
+  position:fixed;
+  top:0;
+
+}
+
 /* Botón principal */
+
+.contenedor-boton{
+  display: flex;
+  justify-content: left; /* alineado a la izquierda */
+  align-items: center;     /* centrado vertical (si tiene altura) */
+  padding-top: 120px; /* espacio desde arriba */
+  text-align: center; /* opcional, lo centra */
+  margin: 10px;
+}
+
 .boton-primario {
   background-color: rgb(223, 213, 213);
   color: black;
@@ -24,6 +40,9 @@ body {
   cursor: pointer;
   margin: 20px;
   transition: background-color 1.5s ease, color 0.4s ease, box-shadow 1.5s ease;
+  
+  
+  
 }
 .boton-primario:hover {
   background-color:  #0074d9;
@@ -67,66 +86,47 @@ body {
   border-radius: 10px;
 }
 
-/* Formulario a la derecha */
-.log {
-  flex: 1;
-  background-color: rgb(223, 213, 213);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-}
-.log form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.log label {
-  font-weight: bold;
-}
-.log input[type="text"],
-.log input[type="password"] {
-  padding: 8px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-}
-.log input[type="submit"],
-.log input[type="reset"] {
-  background-color: rgb(175, 157, 173);
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.log input[type="submit"]:hover,
-.log input[type="reset"]:hover {
-  background-color:  #0074d9;
-}
-.log a {
-  font-size: 0.9rem;
-  color: black;
-  text-decoration: none;
-}
-.log a:hover {
-  text-decoration: underline;
-}
+/* Barra lateral a la derecha */
+   .user-panel {
+            background: #333;
+            border: 2px solid #0f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px auto;
+            width: 300px;
+            text-align: center;
+        }
+        .user-panel h2 {
+            margin: 0;
+            color: #0f0;
+        }
+
+
 
 /* Footer */
 .footi {
+  position:fixed;
+  bottom:0px;
+  width:100%;
   margin-top: 40px;
   background: linear-gradient(135deg, #2c2a2a, #ffffff);
   color: black;
   text-align: center;
-  padding: 20px;
+
   border-top: 3px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px -2px 10px rgba(0,0,0,0.1);
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  line-height: 50%;
 }
-.footi h2 {
-  margin-bottom: 10px;
-}
+
 .footi p {
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
 }
 
 /* Responsive */
