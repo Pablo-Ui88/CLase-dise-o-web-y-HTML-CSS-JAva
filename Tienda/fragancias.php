@@ -153,14 +153,13 @@ function agregarCarrito(nombre, precio) {
 
   // Crear botón eliminar
 function eliminarProducto(nombre) {
-  let producto = carrito.find(p => p.nombre === nombre);
-  if (producto) {
-    total -= producto.precio;
-    carrito = carrito.filter(p => p.nombre !== nombre);
+  let index = carrito.findIndex(p => p.nombre === nombre);
+  if (index !== -1) {
+    total -= carrito[index].precio;  // restar el precio correcto
+    carrito.splice(index, 1);        // eliminar solo ese producto
     renderCarrito();
   }
 }
-
 function renderCarrito() {
   let lista = document.getElementById("listaCarrito");
   lista.innerHTML = "";
