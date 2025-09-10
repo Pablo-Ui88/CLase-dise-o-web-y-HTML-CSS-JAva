@@ -46,12 +46,12 @@ session_start();
         <div class="user-panel">
             <h2>👋 Hola, <?php echo $_SESSION['usuario_nombre']; ?></h2>
             <p>Bienvenido a tu panel de usuario.</p>
-            <a href="Formulario/logout.php">Cerrar sesión</a>
+            <a href="../Formulario/logout.php">Cerrar sesión</a>
         </div>
     <?php else: ?>
         <div class="user-panel">
             <h2>👤 No has iniciado sesión</h2>
-            <a href="inicio.php">Iniciar sesión</a>
+            <a href="../inicio.php">Iniciar sesión</a>
         </div>
     <?php endif; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>

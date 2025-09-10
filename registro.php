@@ -11,11 +11,11 @@
 <div class="reg">
     <h1>REGISTRO</h1>
     <form action="Formulario/registro.php" method="post">
-        <label for="user">Usuario</label>
-        <input type="text" id="user" name="user" required>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
 
         <label for="email">Correo Electronico</label>
-        <input type="text" id="email" name="email" required>
+        <input type="email" id="email" name="email" required>
 
         <label for="password">Contraseña</label>
         <input type="password" id="password" name="password" required>

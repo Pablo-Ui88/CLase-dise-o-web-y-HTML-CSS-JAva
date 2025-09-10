@@ -2,21 +2,10 @@
 session_start();
 $conexion = new mysqli("localhost", "root", "", "registro-login");
 
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
-}
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario  = trim($_POST['usuario']);
     $password = $_POST['password'];
 
-    // Validar que no estén vacíos
-    if (empty($usuario) || empty($password)) {
-        echo "❌ Debes llenar todos los campos.";
-        exit();
-    }
-
-    // Buscar al usuario en la base de datos
     $sql = "SELECT id, usuario, password FROM usuarios WHERE usuario = ?";
     $stmt = $conexion->prepare($sql);
     $stmt->bind_param("s", $usuario);
@@ -26,21 +15,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado->num_rows > 0) {
         $row = $resultado->fetch_assoc();
 
-        // Verificar contraseña
         if (password_verify($password, $row['password'])) {
-            // ✅ Guardar sesión
             $_SESSION['usuario_id'] = $row['id'];
             $_SESSION['usuario_nombre'] = $row['usuario'];
 
-            // Redirigir al inicio
-            header("Location: ../index.php");
+            header("Location: ../inicio.php");
             exit();
         } else {
             echo "❌ Contraseña incorrecta";
         }
     } else {
-        echo "❌ El usuario no existe";
+        echo "❌ Usuario no encontrado";
     }
 }
 ?>
-

@@ -127,8 +127,8 @@ animar();
    <!-- Formulario -->
   <div class="log">
     <form action="Formulario/login.php" method="POST">
-      <label for="user">Usuario</label>
-      <input type="text" id="user" name="user">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario">
 
       <label for="pass">Contraseña</label>
       <input type="password" id="pass" name="password">
@@ -136,7 +136,7 @@ animar();
       <input type="submit" value="Iniciar Sesión">
       <input type="reset" value="Limpiar">
 
-      <a href="registro.html">Registrarse</a>
+      <a href="registro.php">Registrarse</a>
       <a href="Components/olvidar.php">¿Olvidaste tu contraseña?</a>
     </form>
   </div>
