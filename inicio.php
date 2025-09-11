@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
   <title>Seven&SevenSHOP</title>
   <style>
-    body {
-  background-image: url("2v.gif"); /* ruta de la imagen */
-  background-size: cover;  /* ajusta la imagen a toda la pantalla */
-  background-position: center; /* centra la imagen */
-  background-attachment: fixed; /* efecto parallax, la imagen no se mueve */
-  background-repeat: no-repeat; /* evita que se repita */
+  body {
+  background-color: #000000;
+  color: #ffffff;
+    /* background-image: url("2v.gif"); /* ruta de la imagen */
+  /*background-size: cover;  /* ajusta la imagen a toda la pantalla */
+  /*background-position: center; /* centra la imagen */
+  /*background-attachment: fixed; /* efecto parallax, la imagen no se mueve */
+  /*background-repeat: no-repeat; /* evita que se repita */
 }
 .btn-link {
   color: #6a0dad;
@@ -27,7 +29,8 @@
   position: absolute;
   width: 300px;
   flex: 1;
-  background-color: #0074d9;
+  background-color: #ffffffff;
+  color:black;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
@@ -53,7 +56,7 @@
 .log input[type="submit"],
 .log input[type="reset"] {
   background-color: #000000;
-  color: #0074d9;
+  color: #ffffffff;
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -63,6 +66,7 @@
 .log input[type="submit"]:hover,
 .log input[type="reset"]:hover {
   background-color:  white;
+  color:black;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 
 }
@@ -118,12 +122,7 @@ function animar() {
 animar();
 </script>
 
-   
-  <div class="contenedor">
-    <a href="ticket.html"><button type="button" class="btn btn-primary btn-lg">Ticket</button></a>
-    <a href="tienda.html"><button type="button" class="btn btn-primary btn-lg">TIENDA</button></a>
-
-  </div>
+  <h1>Bienvenido a Seven&SevenSHOP</h1>
    <!-- Formulario -->
   <div class="log">
     <form action="Formulario/login.php" method="POST">
@@ -143,10 +142,6 @@ animar();
 </div>
 
 
-  <script>
-    document.getElementById("btn1").addEventListener("click", () => alert("Redirigiendo a la pagina principal"));
-    document.getElementById("btn2").addEventListener("click", () => alert("Solicita un ticket"));
-    document.getElementById("btn3").addEventListener("click", () => alert("Contacta con nosotros"));
-  </script>
+  
 </body>
 </html>

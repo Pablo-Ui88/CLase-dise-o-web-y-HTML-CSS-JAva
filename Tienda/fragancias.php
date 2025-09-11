@@ -42,6 +42,74 @@ session_start();
   </nav>
 
 <div class="main-layout">
+      
+    <h2>Catalogo De Fragancias</h2>
+    <div class="catalogo">
+      
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/AsadLattafa.JPG" alt="Asad Lattafa">
+        <h3>Asad Lattafa</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.700.000$</p>
+        <p>Precio 1.1 : 110.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('Loción Aasad Lataffa', 110.000)">Agregar</button>
+      </div>
+    
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/creedav.JPG" alt="Creed Absolut Adventus ">
+        <h3>Creed Absolu Adventus</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.234.000$</p>
+        <p>Precio 1.1 : 100.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('Creed Absolu Adventus', 100.000)">Agregar</button>
+      </div>
+   
+
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/ch212men.jpg" alt="Carolina Herrera 212 Men NYC">
+        <h3>212 Men - NYC</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.200.000$</p>
+        <p>Precio 1.1 : 100.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('212 Men - NYC', 100.000)">Agregar</button>
+      </div>
+      
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/360blackch.jpg" alt="360 Black CH">
+        <h3>360 Black CH</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.300.000$</p>
+        <p>Precio 1.1 : 100.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('360 Black CH', 100.000)">Agregar</button>
+      </div>
+      
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/SwisArmy.jpg" alt="SwisArmy">
+        <h3>SwisArmy</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.400.000$</p>
+        <p>Precio 1.1 : 100.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('SwisArmy', 100.000)">Agregar</button>
+      </div>
+      
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/hugoboss.jpg" alt="Hugo Boss ">
+        <h3>Hugo Boss</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.000.000$</p>
+        <p>Precio 1.1 : 100.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('Hugo Boss', 100.000)">Agregar</button>
+      </div>
+      
+      <div class="producto">
+        <img src="../Catalogos/Fragancias/santal33.WEBP" alt="Santal 33">
+        <h3>Santal °33</h3>
+        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 1.200.000$</p>
+        <p>Precio 1.1 : 100.000$</p>
+        <p>Precio DobleA : 80.000$</p>
+        <button class="btn1" onclick="agregarCarrito('Santal °33', 100.000)">Agregar</button>
+      </div>
+  <div class="plugins">
       <?php if (isset($_SESSION['usuario_nombre'])): ?>
         <div class="user-panel">
             <h2>👋 Hola, <?php echo $_SESSION['usuario_nombre']; ?></h2>
@@ -54,72 +122,6 @@ session_start();
             <a href="../inicio.php">Iniciar sesión</a>
         </div>
     <?php endif; ?>
-    <div class="catalogo">
-      <h2>Catalogo De Fragancias</h2>
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/AsadLattafa.JPG" alt="Asad Lattafa">
-        <h3>Asad Lattafa</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 110.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('Loción Aasad Lataffa', 110.000)">Agregar</button>
-      </div>
-      <hr>
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/creedav.JPG" alt="Creed Absolut Adventus ">
-        <h3>Creed Absolu Adventus</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 100.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('Creed Absolu Adventus', 100.000)">Agregar</button>
-      </div>
-      <hr>
-
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/ch212men.jpg" alt="Carolina Herrera 212 Men NYC">
-        <h3>212 Men - NYC</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 100.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('212 Men - NYC', 100.000)">Agregar</button>
-      </div>
-      <hr>
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/360blackch.jpg" alt="360 Black CH">
-        <h3>360 Black CH</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 100.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('360 Black CH', 100.000)">Agregar</button>
-      </div>
-      <hr>
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/SwisArmy.jpg" alt="SwisArmy">
-        <h3>SwisArmy</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 100.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('SwisArmy', 100.000)">Agregar</button>
-      </div>
-      <hr>
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/hugoboss.jpg" alt="Hugo Boss ">
-        <h3>Hugo Boss</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 100.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('Hugo Boss', 100.000)">Agregar</button>
-      </div>
-      <hr>
-      <div class="producto">
-        <img src="../Catalogos/Fragancias/santal33.WEBP" alt="Santal 33">
-        <h3>Santal °33</h3>
-        <p>Precio Original <i><strong>(Por encargo)</strong></i>: 120$</p>
-        <p>Precio 1.1 : 100.000$</p>
-        <p>Precio DobleA : 80.000$</p>
-        <button class="btn1" onclick="agregarCarrito('Santal °33', 100.000)">Agregar</button>
-      </div>
-      <hr>
       <div class="carrito">
         <h2>Carrito de compras</h2>
         <ul id="listaCarrito"></ul>
@@ -129,7 +131,7 @@ session_start();
 
 
       </div>
-
+  </div>
 <script>
   let carrito = [];
   let total = 0;
@@ -137,7 +139,7 @@ session_start();
 function agregarCarrito(nombre, precio) {
   carrito.push({ nombre, precio });
   total += precio;
-
+  renderCarrito(); // ✅ siempre redibuja el carrito
   let lista = document.getElementById("listaCarrito");
   let item = document.createElement("li");
   item.textContent = `${nombre} - $${precio}`;
@@ -148,6 +150,7 @@ function agregarCarrito(nombre, precio) {
     total = 0;
     document.getElementById("listaCarrito").innerHTML = "";
     document.getElementById("total").textContent = total;
+    renderCarrito(); // ✅ siempre redibuja el carrito
   }
   
 

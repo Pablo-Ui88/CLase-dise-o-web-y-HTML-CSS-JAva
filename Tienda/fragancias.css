@@ -13,11 +13,11 @@ body {
 }
 
 .main-layout {
+
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  gap: 20px;
+  flex-wrap: wrap;        /* permite que bajen si no caben */
+  gap: 20px;              /* margen entre tarjetas */
+  justify-content: center; /* centra si sobra espacio */
 }
 
 .navbar-brand {
@@ -38,25 +38,68 @@ body {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Brillo */
   box-shadow: 0px 4px 12px rgba(0, 116, 217, 0.4); /* Sombra */
 }
-
-/* Contenido a la izquierda */
-.contenido {
-  flex: 2;
-  background: #f5f5f5;
-  padding: 20px;
-  border-radius: 10px;
+.main-layout{
+  position: relative
 }
 
 
-.producto{
-  width: 300px;
-  height:500px;
-  background-color:#0074d9;
+/* Contenido a la izquierda */
+
+
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* siempre 3 columnas */
+  gap: 20px; /* espacio entre productos */
+  justify-items: center; /* centra los items en su columna */
+}
+
+.plugins{
+
+}
+
+.user-panel{
+  position: fixed;
+  bottom: 250px;
+  right: 0;
+  width:250px;
+  padding: 5px;
+  background-color: #0074d9;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
+}
+.carrito{
+  background-color: #0074d9;
+  color: white;
+  position: fixed;
+  width: 250px;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+.catalogo {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 productos por fila */
+  gap: 20px; /* espacio entre productos */
+  margin-top: 50px;
+}
+
+
+.producto {
+  flex: 0 0 calc(33.333% - 20px); /* 3 por fila menos el gap */
+  max-width: 300px;
+  height: 500px;
+  background-color: #0074d9;
   position: relative;
   border: 3px solid black;
   border-radius: 10px;
-
 }
+
+
 .producto p{
   padding:3px 5px;
 }
